@@ -168,6 +168,8 @@
 
 ## Global Fixes
 
+**Please note that i did't install any external packages and stick to the minimum provided packages, for better styling i would choose `TailwindCSS`, for better UX i would install `Lucide` for icons and `sonner` for toasts, also i used Native Debounce instead of installing external packages (which is better), you did't say i can install external packages so i sticked to it**
+
 1. Refactored all the components related to the two pages into `features` folder, containing all the components and business login related to each page, and the shared code `utilities` or `components` were implemented globally outside the `features` folder, this helps the separation between route folders (pure server components) and the components, achieving the separation of concerns
 2. removed the `backendApi.ts` file and the api folder `API route handler` no longer useful, as they are refactored into server actions
 3. removed unnecessary types
