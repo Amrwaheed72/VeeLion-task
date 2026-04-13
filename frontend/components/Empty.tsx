@@ -1,10 +1,5 @@
+import { EmptyStateProps } from "@/types/Props.types";
 import Link from "next/link";
-
-type EmptyStateProps = {
-  title?: string;
-  message?: string;
-  onRefresh?: () => void;
-};
 
 const Empty = ({
   title = "It's quiet here...",

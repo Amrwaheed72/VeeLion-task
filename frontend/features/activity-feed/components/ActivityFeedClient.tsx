@@ -12,7 +12,7 @@ const ActivityFeedClient = ({
   initialData: ActivityLog[];
 }) => {
   const [query, setQuery] = useState<string | "">("");
-  const debouncedSearch = useDebounce(query, 300);
+  const debouncedSearch = useDebounce(query, 400);
   const resultActivities = useFilter(debouncedSearch, initialData);
 
   const activityInfo = {

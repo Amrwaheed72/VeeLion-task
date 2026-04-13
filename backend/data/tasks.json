@@ -2,16 +2,16 @@
   {
     "id": "aeccf602-2809-4802-985b-70ff86942377",
     "title": "Test task",
-    "completed": true,
+    "completed": false,
     "createdAt": "2026-04-08T09:39:57.432Z",
-    "updatedAt": "2026-04-12T17:39:27.701Z"
+    "updatedAt": "2026-04-13T16:15:43.870Z"
   },
   {
     "id": "9a749a2d-ec52-415e-b68d-3c16a6ed024d",
     "title": "degraded task",
-    "completed": true,
+    "completed": false,
     "createdAt": "2026-04-08T09:49:54.480Z",
-    "updatedAt": "2026-04-12T17:39:28.514Z"
+    "updatedAt": "2026-04-13T16:15:44.161Z"
   },
   {
     "id": "4398f26b-f527-4eeb-b74c-cd4c0ecc9060",

@@ -1,6 +1,6 @@
 import "../styles.css";
 import ErrorFallback from "@/components/ErrorFallback";
-import { getActivity, refetchAction } from "../actions";
+import { getActivity, refetchAction } from "../../actions";
 import Empty from "@/components/Empty";
 import ActivityFeedClient from "./ActivityFeedClient";
 

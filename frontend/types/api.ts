@@ -17,21 +17,5 @@ export type ActionResponse<T> = {
   data: T | null;
   error: string | null;
 };
-export type TasksResponse = {
-  data: Task[];
-};
-
-export type ActivityResponse = {
-  data: Task;
-};
-export type TaskResponse = {
-  data: Task;
-};
-
-export type ErrorResponse = {
-  error?: {
-    message?: string;
-  };
-};
 
 export type TaskFilter = "all" | "completed" | "pending";

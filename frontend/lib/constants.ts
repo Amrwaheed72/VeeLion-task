@@ -1,2 +1,7 @@
-export const BACKEND_BASE_URL =
-  process.env.NEXT_PUBLIC_BACKEND_API_URL || "http://localhost:4000";
+import { TaskFilter } from "@/types/api";
+
+export const FILTERS: Array<{ label: string; value: TaskFilter }> = [
+  { label: "All", value: "all" },
+  { label: "Completed", value: "completed" },
+  { label: "Pending", value: "pending" },
+];

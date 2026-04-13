@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { TaskDashboard } from "@/components/tasks/TaskDashboard";
+import TaskDashboardContent from "@/features/dashboard-tasks/components/TaskDashboardContent";
+import { Suspense } from "react";
 
 export default function TasksPage() {
   return (
@@ -9,7 +10,12 @@ export default function TasksPage() {
           Back
         </Link>
       </nav>
-      <TaskDashboard />
+      <section className="card">
+        <h1 className="activity-header">Task Dashboard</h1>
+      </section>
+      <Suspense fallback={<p>loading...</p>}>
+        <TaskDashboardContent />
+      </Suspense>
     </main>
   );
 }
