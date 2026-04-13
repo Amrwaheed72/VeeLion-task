@@ -53,7 +53,7 @@
   background: var(--chip);
 }
 .status-todo .status-title {
-  color: var(--muted);
+  color: #5a5a5a;
 }
 .status-todo .status-value {
   color: var(--text);
@@ -64,7 +64,7 @@
   border: 1px solid #fde68a;
 }
 .status-progress .status-title {
-  color: #d97706;
+  color: #995200;
 }
 .status-progress .status-value {
   color: #92400e;
