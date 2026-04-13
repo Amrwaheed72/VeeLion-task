@@ -1,17 +1,10 @@
-interface ActivityInfo {
-  total: number;
-  shown: number;
-}
+import { ActivityFeedInfoProps } from "@/types/Props.types";
 
 const ActivityFeedInfo = ({
   activityInfo,
   query,
   setQuery,
-}: {
-  activityInfo: ActivityInfo;
-  query: string;
-  setQuery: (key: string) => void;
-}) => {
+}: ActivityFeedInfoProps) => {
   return (
     <section className="info-card">
       <input

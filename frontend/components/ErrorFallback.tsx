@@ -15,17 +15,23 @@ const ErrorFallback = ({
       await reset();
     });
   };
+
   return (
     <section className="error-fallback">
       <div className="error-icon">⚠️</div>
       <h2 className="sorry">Sorry, something went wrong</h2>
       <p className="error-msg">{error}</p>
       <div className="btn-container">
-        <Link href="/" className="go-home">
-          Go Home
+        <Link href="/" className="button">
+          &larr; Go Home
         </Link>
-        <button type="button" onClick={handleReset} className="retry">
-          {isPending ? "Tying..." : "Try Again"}
+        <button
+          type="button"
+          onClick={handleReset}
+          className="button primary"
+          disabled={isPending}
+        >
+          {isPending ? "Trying..." : "Try Again"}
         </button>
       </div>
     </section>

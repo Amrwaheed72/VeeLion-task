@@ -20,3 +20,13 @@ export type EmptyStateProps = {
   message?: string;
   onRefresh?: () => void;
 };
+
+export type ActivityInfo = {
+  total: number;
+  shown: number;
+};
+export type ActivityFeedInfoProps = {
+  activityInfo: ActivityInfo;
+  query: string;
+  setQuery: (key: string) => void;
+};

@@ -1,8 +1,4 @@
 .info-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,34 +8,32 @@
 @media (max-width: 720px) {
   .info-card {
     flex-direction: column;
-    align-items: start;
+    align-items: stretch;
   }
 }
 
-.activity-header {
-  margin: 0 0 0.5rem 0;
-  text-align: center;
-}
 .input {
   width: 100%;
   max-width: 600px;
   border-radius: 8px;
   border: 1px solid var(--border);
   outline: none;
-  padding: 0.55rem 0.7rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  padding: 0.6rem 1rem;
   font-size: 0.95rem;
-  background: #fff;
-  transition: all;
-  transition-duration: 300ms;
+  background: #f9fafb;
+  transition: all 0.2s ease;
 }
 .input:focus {
+  background: var(--surface);
   border-color: var(--primary);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 3px var(--primary-soft);
 }
 
 .activity-info {
   color: var(--muted);
+  font-weight: 500;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .activities-list {
@@ -47,48 +41,46 @@
   padding: 0;
   list-style: none;
   display: flex;
-  gap: 0.7rem;
   flex-direction: column;
 }
-.activity-action {
-  font-weight: 600;
-}
-.activity-date {
-  color: var(--muted);
-}
-
-.activities-card {
-  padding: 1rem;
-}
-
 .activity-item {
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.6rem;
+  padding-bottom: 1rem 0;
 }
 .activity-item:last-child {
   border-bottom: none;
+  padding-bottom: 0;
+}
+.activity-action {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+.activity-date {
+  color: var(--muted);
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.4rem;
 }
 
 @keyframes skeleton-pulse {
-  0% {
-    opacity: 0.7;
+  0%,
+  100% {
+    opacity: 1;
   }
   50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 0.7;
+    opacity: 0.5;
   }
 }
 
 .skeleton {
   background-color: var(--border);
   border-radius: 4px;
-  animation: skeleton-pulse 1.5s ease-in-out infinite;
+  animation: skeleton-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .skel-search {
-  height: 30px;
+  height: 40px;
   width: 100%;
   max-width: 600px;
   border-radius: 8px;
@@ -97,33 +89,30 @@
 
 .skel-stats {
   height: 14px;
-  width: 150px;
+  width: 120px;
 }
 
 .skel-item {
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.8rem;
-  margin-bottom: 0.8rem;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .skel-item:last-child {
   border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .skel-line-title {
   height: 16px;
-  width: 30%;
+  width: 40%;
 }
 .skel-line-desc {
   height: 14px;
-  width: 70%;
+  width: 85%;
 }
 .skel-line-date {
   height: 12px;
-  width: 20%;
+  width: 25%;
 }
