@@ -1,3 +1,4 @@
+"use client";
 import { ActivityFeedInfoProps } from "@/types/Props.types";
 
 const ActivityFeedInfo = ({

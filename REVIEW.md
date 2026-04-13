@@ -156,6 +156,16 @@
 
 ---
 
+## 3. Reports Page Module
+
+### What i did
+
+- Applied all the best practices and performance optimization (using server actions)
+- Applied separation of concerns, separated the logic from the styling
+- Implemented loading state using `Suspense` with a `Skeleton UI` that matches the page during loading, also implemented the error state and empty state using the reusable component `ErrorFallback` & `Empty`
+- Applied best practices in Next.js by make the components as server components
+- Implemented a visual Bar, that indicated the percentage of the completed tasks
+
 ## Global Fixes
 
 1. Refactored all the components related to the two pages into `features` folder, containing all the components and business login related to each page, and the shared code `utilities` or `components` were implemented globally outside the `features` folder, this helps the separation between route folders (pure server components) and the components, achieving the separation of concerns
@@ -167,3 +177,5 @@
 7. global generic types for components separated from the `api.ts` types file, to make the code cleaner and achieve the separation of concerns
 8. built the `ErrorFallback` and `Empty` component for handling empty sstates and error states with nice looking ui to use them across the whole app
 9. implemented a separate css file for each module, and global file for shared styles
+10. enhancing the css styling
+11. i used os icons because i am not allowed to install external packages or use svg icons, so i sticked to the main goal of the task

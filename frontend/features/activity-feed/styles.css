@@ -45,7 +45,7 @@
 }
 .activity-item {
   border-bottom: 1px solid var(--border);
-  padding-bottom: 1rem 0;
+  padding-top: 1rem;
 }
 .activity-item:last-child {
   border-bottom: none;

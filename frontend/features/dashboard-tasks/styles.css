@@ -43,3 +43,50 @@
   color: var(--muted);
   font-size: 0.85rem;
 }
+
+@keyframes skeleton-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.skeleton {
+  background-color: var(--border);
+  border-radius: 4px;
+  animation: skeleton-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.skel-filter-btn {
+  height: 36px;
+  width: 90px;
+  border-radius: 8px;
+}
+
+.skel-task-title {
+  height: 20px;
+  width: 55%;
+  border-radius: 4px;
+}
+
+.skel-task-badge {
+  height: 24px;
+  width: 75px;
+  border-radius: 999px;
+}
+
+.skel-task-date {
+  height: 14px;
+  width: 35%;
+  border-radius: 4px;
+  margin-top: 0.2rem;
+}
+
+.skel-task-btn {
+  height: 36px;
+  width: 140px;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}

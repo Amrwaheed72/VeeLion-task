@@ -19,3 +19,13 @@ export type ActionResponse<T> = {
 };
 
 export type TaskFilter = "all" | "completed" | "pending";
+
+export type TasksSummary = {
+  total: number;
+  byStatus: {
+    todo: number;
+    "in-progress": number;
+    done: number;
+  };
+  recentActivityCount: number;
+};

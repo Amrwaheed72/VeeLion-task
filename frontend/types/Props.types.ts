@@ -30,3 +30,20 @@ export type ActivityFeedInfoProps = {
   query: string;
   setQuery: (key: string) => void;
 };
+
+export type ReportHeaderProps = {
+  total: number;
+  recentActivityCount: number;
+};
+export type BarsProps = {
+  todoPercentage: number;
+  progressPercentage: number;
+  donePercentage: number;
+};
+export type TasksGridProps = {
+  byStatus: {
+    todo: number;
+    "in-progress": number;
+    done: number;
+  };
+};

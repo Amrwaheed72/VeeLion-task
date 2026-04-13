@@ -8,7 +8,7 @@ export const useDebounce = (query: string, timeValue: number) => {
       setDebouncedValue(query);
     }, timeValue);
     return () => clearTimeout(timer);
-  }, [query]);
+  }, [query, timeValue]);
 
   return debouncedValue;
 };

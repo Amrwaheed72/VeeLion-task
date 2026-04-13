@@ -1,4 +1,4 @@
-export default async function ActivitySkeleton() {
+export default function ActivitySkeleton() {
   return (
     <div className="stack">
       <section className="info-card">

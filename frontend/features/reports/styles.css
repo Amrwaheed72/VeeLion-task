@@ -1,0 +1,185 @@
+.stat-card {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.stat-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.stat-title {
+  margin: 0 0 0.5rem 0;
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.stat-value {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.stat-value.primary {
+  color: var(--primary);
+}
+
+.section-title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.25rem;
+  color: var(--text);
+  text-align: center;
+}
+
+.status-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.status-title {
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.status-value {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.status-todo {
+  background: var(--chip);
+}
+.status-todo .status-title {
+  color: var(--muted);
+}
+.status-todo .status-value {
+  color: var(--text);
+}
+
+.status-progress {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+}
+.status-progress .status-title {
+  color: #d97706;
+}
+.status-progress .status-value {
+  color: #92400e;
+}
+
+.status-done {
+  background: var(--primary-soft);
+  border: 1px solid var(--primary-soft);
+}
+.status-done .status-title,
+.status-done .status-value {
+  color: var(--primary);
+}
+.report-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.report-header {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+}
+
+.report-main-stat {
+  flex: 1;
+  min-width: 250px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .report-main-stat:first-child {
+    border-right: 1px solid var(--border);
+  }
+}
+
+.report-body {
+  padding: 2.5rem 2rem;
+  background: #fdfdfd;
+}
+.task-progress-bar {
+  display: flex;
+  height: 12px;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 1.5rem 0 2.5rem 0;
+  background: var(--border);
+}
+
+.progress-segment {
+  height: 100%;
+  transition: width 1s ease-in-out;
+}
+
+.segment-todo {
+  background: #e5e7eb;
+}
+.segment-progress {
+  background: #f59e0b;
+}
+.segment-done {
+  background: var(--primary);
+}
+@keyframes skeleton-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.skeleton {
+  background-color: var(--border);
+  border-radius: 4px;
+  animation: skeleton-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.skel-stat-icon {
+  height: 48px;
+  width: 48px;
+  border-radius: 12px;
+  margin: 0 auto 1rem auto;
+}
+
+.skel-stat-title {
+  height: 18px;
+  width: 50%;
+  border-radius: 4px;
+  margin: 0 auto 0.8rem auto;
+}
+
+.skel-stat-value {
+  height: 40px;
+  width: 30%;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.skel-section-title {
+  height: 24px;
+  width: 200px;
+  border-radius: 4px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.skel-status-card {
+  height: 104px;
+  border-radius: 8px;
+}

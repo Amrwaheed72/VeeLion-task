@@ -1,6 +1,7 @@
 import Link from "next/link";
 import TaskDashboardContent from "@/features/dashboard-tasks/components/TaskDashboardContent";
 import { Suspense } from "react";
+import TasksSkeleton from "@/features/dashboard-tasks/components/TasksSkeleton";
 
 export default function TasksPage() {
   return (
@@ -13,7 +14,7 @@ export default function TasksPage() {
       <section className="card">
         <h1 className="activity-header">Task Dashboard</h1>
       </section>
-      <Suspense fallback={<p>loading...</p>}>
+      <Suspense fallback={<TasksSkeleton />}>
         <TaskDashboardContent />
       </Suspense>
     </main>
