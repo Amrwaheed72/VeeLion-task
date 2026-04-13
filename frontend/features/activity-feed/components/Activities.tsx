@@ -1,7 +1,7 @@
 import { ActivityLog } from "@/types/api";
 import { formatDateTime } from "../utils";
 
-const Activities = ({ activities }: { activities: ActivityLog[] }) => {
+const Activities = async ({ activities }: { activities: ActivityLog[] }) => {
   return (
     <section className="card activities-card">
       <ul className="activities-list">

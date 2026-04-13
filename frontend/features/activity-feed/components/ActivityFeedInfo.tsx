@@ -17,6 +17,7 @@ const ActivityFeedInfo = ({
       <input
         className="input"
         placeholder="Search activity"
+        aria-label="search input"
         value={query}
         onChange={(event) => setQuery(event.target.value)}
       />
