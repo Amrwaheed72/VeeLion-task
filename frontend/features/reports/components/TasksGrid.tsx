@@ -5,17 +5,17 @@ const TasksGrid = ({ byStatus }: TasksGridProps) => {
   return (
     <div className="grid">
       <div className="status-card status-todo">
-        <h4 className="status-title">To Do</h4>
+        <p className="status-title">To Do</p>
         <p className="status-value">{todo}</p>
       </div>
 
       <div className="status-card status-progress">
-        <h4 className="status-title">In Progress</h4>
+        <p className="status-title">In Progress</p>
         <p className="status-value">{byStatus["in-progress"]}</p>
       </div>
 
       <div className="status-card status-done">
-        <h4 className="status-title">Done</h4>
+        <p className="status-title">Done</p>
         <p className="status-value">{done}</p>
       </div>
     </div>

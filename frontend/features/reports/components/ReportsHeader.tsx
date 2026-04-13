@@ -5,13 +5,13 @@ const ReportsHeader = ({ total, recentActivityCount }: ReportHeaderProps) => {
     <header className="report-header">
       <div className="report-main-stat">
         <div className="stat-icon">📦</div>
-        <h3 className="stat-title">Total Tasks</h3>
+        <p className="stat-title">Total Tasks</p>
         <p className="stat-value">{total}</p>
       </div>
 
       <div className="report-main-stat">
         <div className="stat-icon">⚡</div>
-        <h3 className="stat-title">Recent Activities</h3>
+        <p className="stat-title">Recent Activities</p>
         <p className="stat-value primary">{recentActivityCount}</p>
       </div>
     </header>

@@ -30,7 +30,7 @@
 }
 
 .activity-info {
-  color: var(--muted);
+  color: #373636;
   font-weight: 500;
   font-size: 0.9rem;
   white-space: nowrap;
